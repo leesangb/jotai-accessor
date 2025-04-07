@@ -1,13 +1,25 @@
 # jotai-accessor
 
-`jotai-accessor` is a utility to use [`jotai`](https://jotai.org) atoms easily in projects that use both Vanilla and React.
+`jotai-accessor` is a lightweight wrapper around [`jotai`](https://jotai.org) that provides a simplified API for state management in both Vanilla JavaScript and React applications.
 
 ## Why?
 
-When using [`jotai`](https://jotai.org) in a project that uses both Vanilla and React, you have to use `getDefaultStore().get(someAtom)` or `getDefaultStore().set(someAtom, value)` to read/write to an atom.
-Altough this is not a problem, it can be a bit verbose when you have to manage a lot of atoms in vanilla code.
+When using [`jotai`](https://jotai.org) in projects that combine Vanilla JavaScript and React, you typically need to use verbose syntax like `getDefaultStore().get(someAtom)` or `getDefaultStore().set(someAtom, value)` to interact with atoms outside of React components.
 
-This utility is a simple wrapper that lets you use `jotai` atoms conveniently in both Vanilla and React.
+This utility eliminates that verbosity by providing a clean, consistent interface for managing atom state across your entire application.
+
+## Prerequisites
+
+- [`jotai^2.0.0`](https://jotai.org)
+
+## Installation
+
+```bash
+npm install @leesangb/jotai-accessor
+pnpm install @leesangb/jotai-accessor
+yarn add @leesangb/jotai-accessor
+bun add @leesangb/jotai-accessor
+```
 
 ## Usage
 
