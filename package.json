@@ -1,0 +1,48 @@
+{
+  "name": "@leesangb/jotai-accessor",
+  "description": "A lightweight wrapper around Jotai that provides a simplified API for state management in both Vanilla JavaScript and React applications. Makes Jotai's atom-based state management more accessible and easier to use.",
+  "version": "0.0.1",
+  "type": "module",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/leesangb/jotai-accessor.git"
+  },
+  "license": "MIT",
+  "author": {
+    "name": "Sangbin Lee",
+    "email": "leesangbin@outlook.com"
+  },
+  "files": ["dist"],
+  "exports": {
+    ".": {
+      "import": {
+        "types": "./dist/index.d.ts",
+        "default": "./dist/index.mjs"
+      }
+    }
+  },
+  "scripts": {
+    "build": "vite build",
+    "test": "vitest"
+  },
+  "packageManager": "pnpm@9.6.0",
+  "peerDependencies": {
+    "jotai": "^2.0.0"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "^1.9.4",
+    "@testing-library/dom": "^10.4.0",
+    "@testing-library/jest-dom": "^6.6.3",
+    "@testing-library/react": "^16.3.0",
+    "@types/react": "^19.1.0",
+    "@types/react-dom": "^19.1.1",
+    "@vitejs/plugin-react": "^4.3.4",
+    "jsdom": "^26.0.0",
+    "react": "^19.1.0",
+    "turbo": "^2.5.0",
+    "typescript": "^5.8.3",
+    "vite": "^6.2.5",
+    "vite-plugin-dts": "^4.5.3",
+    "vitest": "^3.1.1"
+  }
+}
