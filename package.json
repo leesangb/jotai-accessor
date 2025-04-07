@@ -27,7 +27,9 @@
   },
   "scripts": {
     "build": "vite build",
-    "test": "vitest"
+    "test": "vitest",
+    "prepublish": "pnpm build",
+    "publish": "pnpm publish --access public"
   },
   "packageManager": "pnpm@9.6.0",
   "peerDependencies": {
